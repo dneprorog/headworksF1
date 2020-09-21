@@ -33,13 +33,13 @@
 
   .small {
     &__first {
-      font-size: var(--size16);
+      font-size: var(--size16) !important;
       font-weight: var(--weight700);
       top: -20px;
     }
 
     &__last {
-      font-size: var(--size18);
+      font-size: var(--size18) !important;
       font-weight: var(--weight600);
     }
   }

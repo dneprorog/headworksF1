@@ -7,7 +7,7 @@ textarea {
   color: var(--gray6);
   background: var(--gray1);
   padding: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
   outline: none;
 
   &::placeholder {
@@ -15,4 +15,8 @@ textarea {
     font-size: var(--size16);
     font-weight: var(--weight600);
   }
+}
+
+textarea {
+  height: 90px;
 }
