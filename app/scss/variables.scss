@@ -1,0 +1,38 @@
+:root {
+  --primary: #333333;
+  --secondary: #E5E5E5;
+
+  --gray1: #333333;
+  --gray2: #4F4F4F;
+  --gray3: #FAFAFA;
+  --gray4: #EBEBEB;
+  --gray5: #E0E0E0;
+  --gray6: #F2F2F2;
+  --gray7: #BDBDBD;
+
+  --red: #F50A4D;
+
+  /* font size */
+  --size10: 10px;
+  --size12: 12px;
+  --size14: 14px;
+  --size16: 16px;
+  --size18: 18px;
+  --size28: 1.75rem;
+  --size32: 2rem;
+  --size36: 2.25rem;
+  --size48: 3rem;
+
+  /* font weight */
+  --weight400: 400;
+  --weight600: 600;
+  --weight700: 700;
+
+  /* font style */
+  --normal: normal;
+  --italic: italic;
+
+  /* letter spacing */
+  --spacing01: 0.01em;
+  --spacing08: 0.08em;
+}

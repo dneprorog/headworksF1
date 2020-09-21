@@ -1,5 +1,13 @@
 // only imports here
-
+@import './mobile.scss';
+@import './small-tablet.scss';
+@import './large-tablet.scss';
+@import './form-elements.scss';
+@import './button.scss';
+@import './hamburger.scss';
 // start here with normalizer and global styles
-
+@import './reset.scss';
+@import './base.scss';
+@import './variables.scss';
 // put here other imports
+@import './desktop.scss';

@@ -1,0 +1,72 @@
+html,
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: var(--size16);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--size48);
+  font-style: var(--italic);
+  font-weight: var(--weight700);
+  color: var(--red);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--size36);
+  font-style: var(--italic);
+  font-weight: var(--weight700);
+  color: var(--red);
+  margin: 0;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: var(--size28);
+  font-style: var(--italic);
+  font-weight: var(--weight700);
+  color: var(--gray1);
+  margin: 0;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+p {
+  font-size: var(--size16);
+  font-style: var(--normal);
+  font-weight: var(--weight400);
+  line-height: 24px;
+  color: var(--gray2);
+}
+
+figure {
+  margin: 0;
+}
+
+.small {
+  letter-spacing: var(--spacing01);
+  color: var(--gray1) !important;
+
+  &__first {
+    font-size: var(--size10);
+    font-weight: var(--weight600);
+    font-style: var(--italic);
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+
+  &__last {
+    font-size: var(--size12);
+    font-weight: var(--weight600);
+    font-style: var(--normal);
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+  }
+}

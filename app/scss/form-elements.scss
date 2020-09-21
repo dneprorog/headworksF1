@@ -1,0 +1,18 @@
+input,
+textarea {
+  font-size: var(--size16);
+  font-style: var(--normal);
+  border: 1px solid var(--gray2);
+  border-radius: 0;
+  color: var(--gray6);
+  background: var(--gray1);
+  padding: 12px;
+  margin-bottom: 15px;
+  outline: none;
+
+  &::placeholder {
+    color: var(--gray6);
+    font-size: var(--size16);
+    font-weight: var(--weight600);
+  }
+}

@@ -1,17 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
-  <link rel="stylesheet" href="css/styles.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="css/styles.min.css" media="(min-width: 620px)">
+  <link rel="stylesheet" href="css/styles.min.css" media="(min-width: 960px)">
+  <link rel="stylesheet" href="css/styles.min.css" media="(min-width: 1200px)">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap"
+    rel="stylesheet" />
   <script defer src="js/scripts.min.js"></script>
 </head>
+
 <body>
-  Hello World!
-<!--Happy coding-->
+  <header class="header">
+    <div class="header__hamburger-menu hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#about">About</a></li>
+        <li><a class="menu__item" href="#drivers">Drivers</a></li>
+        <li><a class="menu__item" href="#car">Car</a></li>
+      </ul>
+      <div class="overlay"></div>
+    </div>
+
+    <img src="./img/hw-logo.svg" class="header__logo" alt="Logo">
+
+
+    <nav class="header__nav">
+      <a href="#about" class="header__nav header__nav--item">About</a>
+      <a href="#drivers" class="header__nav header__nav--item">Drivers</a>
+      <a href="#car" class="header__nav header__nav--item">Car</a>
+    </nav>
+
+    <button class="header__button button__heading button">Contact</button>
+  </header>
+
+  <section class="company">
+    <div class="company__heading">
+      <h1 class="company__title">
+        <small class="small small__first">Racing Team</small>
+        HeadWorks F1
+        <small class="small small__last">Code clean, care fast</small>
+      </h1>
+    </div>
+
+    <img src="./img/hw-header-car.png" class="company__images" alt="Car" />
+  </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+
+    <figure class="about__descr">
+      <img src="./img/hw-about-background.jpg" class="about__descr about__descr--image" alt="About" />
+      <figcaption class="about__descr about__descr--data">
+        <span>- 153 races</span>
+        <span>- 25 podiums</span>
+        <span>- 6 wins</span>
+      </figcaption>
+    </figure>
+
+    <div class="about__text">
+      <p>
+        We are It company that passioned about motorsport. Teamwork,
+        innovations, and modern approaches - principles we are building our
+        team around.
+      </p>
+      <p>
+        With the challenge of making racing cars faster, lighter, and more
+        reliable, Headworks Motosport was born: the company that specializes
+        in the development of innovative methods and the production of
+        high-quality components that never existed before.
+      </p>
+    </div>
+  </section>
+
+  <section id="drivers" class="drivers">
+    <h2 class="drivers__title-first">Drivers</h2>
+
+    <div class="drivers__card">
+      <div class="wrapper-img">
+        <img src="./img/hw-driver-stig-2.jpg" class="wrapper-img__image" alt="Driver-2" />
+      </div>
+
+      <div class="info">
+        <div class="info__wrapper">
+          <span class="info__small-text">Fulstack racing driver</span>
+          <h3 class="info__title">Javan Scripter</h3>
+        </div>
+
+        <div class="info__description">
+          <ul class="date">
+            <li class="date__item">Races: <span class="date__item--child">46</span></li>
+            <li class="date__item">Pole-positions: <span class="date__item--child">0</span></li>
+            <li class="date__item">Podiums: <span class="date__item--child">4</span></li>
+          </ul>
+
+          <ul class="date">
+            <li class="date__item">Wins: <span class="date__item--child">0</span></li>
+            <li class="date__item">Date of birth: <span class="date__item--child">1998/10/5</span></li>
+            <li class="date__item">
+              Place of birth: <span class="date__item--child">Madrid, Spain</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="drivers__card">
+      <div class="wrapper-img">
+        <img src="./img/hw-driver-stig-1.jpg" class="wrapper-img__image" alt="Driver-1" />
+      </div>
+
+      <div class="info">
+        <div class="info__wrapper">
+          <span class="info__small-text">Senior racing driver</span>
+          <h3 class="info__title">Jonny Figmov</h3>
+        </div>
+
+        <div class="info__description">
+          <ul class="date">
+            <li class="date__item">Races: <span class="date__item--child">46</span></li>
+            <li class="date__item">Pole-positions: <span class="date__item--child">0</span></li>
+            <li class="date__item">Podiums: <span class="date__item--child">4</span></li>
+          </ul>
+
+          <ul class="date">
+            <li class="date__item">Wins: <span class="date__item--child">0</span></li>
+            <li class="date__item">Date of birth: <span class="date__item--child">1998/10/5</span></li>
+            <li class="date__item">
+              Place of birth: <span class="date__item--child">Madrid, Spain</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="car" class="car">
+    <h2 class="car__title">Car</h2>
+    <ul class="car__info">
+      <li class="car__info car__info--item">Year: <span>2020</span></li>
+      <li class="car__info car__info--item">Wins: <span>3</span></li>
+      <li class="car__info car__info--item">Poles: <span>5</span></li>
+      <li class="car__info car__info--item">Points: <span>78</span></li>
+    </ul>
+
+    <figure class="car__descr">
+      <img src="./img/hw-car-car_image.jpg" class="car__descr car__descr--image" alt="Car" />
+      <figcaption class="car__descr car__descr--text">
+        <p>Power 950–1,000 horsepower (710–750 kW)</p>
+        <p>Weight 733 kg (1,616.0 lb)</p>
+      </figcaption>
+    </figure>
+
+    <div class="car__date">
+      <ul>
+        <li>Width 2,000 mm (79 in)</li>
+        <li>Height 950 mm (37 in)</li>
+        <li>Wheelbase 3,726 mm (146.7 in)</li>
+      </ul>
+
+      <ul>
+        <li>0 to 100 km/h (62 mph): 2.4 seconds</li>
+        <li>0 to 200 km/h (124 mph): 4.4 seconds</li>
+        <li>0 to 300 km/h (186 mph): 8.4 seconds</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+
+    <img src="./img/hw-logo.svg" class="footer__logo" alt="Logo">
+
+    <p class="footer__text">
+      We are It company that passioned about motorsport. Teamwork,
+      innovations, and modern approaches - principles we are building our team
+      around.
+    </p>
+
+    <nav>
+      <ul class="footer__nav nav">
+        <li class="nav__item">About</li>
+        <li class="nav__item">Drivers</li>
+        <li class="nav__item">Car</li>
+      </ul>
+    </nav>
+
+    <form class="footer__form">
+      <input placeholder="Email" type="text" />
+      <textarea placeholder="Message"></textarea>
+      <button class="button button__form">Contact</button>
+    </form>
+  </footer>
 </body>
+
 </html>

@@ -1,0 +1,52 @@
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+  .header {
+    &__hamburger-menu {
+      grid-column: 2 / 3;
+
+      .menu__btn {
+        grid-column: 2 / 2;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &__logo {
+      grid-column: 3 / 4;
+    }
+
+    &__button {
+      grid-column: 14 / 16;
+    }
+  }
+
+  .footer {
+    &__logo {
+      grid-column: 2 / 6;
+      grid-row: 2;
+    }
+
+    &__text {
+      grid-column: 2 / 6;
+      grid-row: 2;
+      margin-top: 50px;
+    }
+
+    nav {
+      grid-column: 8 / 9;
+      grid-row: 2;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__form {
+      grid-column: 11 / 16;
+      grid-row: 2;
+    }
+  }
+}
